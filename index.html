@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Higor Lara</title>
+  </head>
+  <body>
+    <div id="background">
+      <header>
+        <div id="button_header_container">
+          <div class="logo_container">
+            <img src="./images/logo.png" alt="logo" class="logo" />
+          </div>
+          <button class="button_header" onclick="changePosition(background)">
+            Quem sou
+          </button>
+          <button
+            class="button_header"
+            onclick="changePosition(skills_container)"
+          >
+            O que faço
+          </button>
+          <button
+            class="button_header"
+            onclick="changePosition(projects_container)"
+          >
+            Portfólio
+          </button>
+          <button
+            class="button_header"
+            onclick="changePosition(contact_container)"
+          >
+            Contato
+          </button>
+        </div>
+        <div id="media_container">
+          <a
+            href="https://www.instagram.com/higor_lara/"
+            class="molde_social_media"
+            target="_blank"
+          >
+            <img
+              src="./images/insta/instagram.png"
+              alt="instagram"
+              class="social_media_img"
+            />
+          </a>
+          <a
+            class="molde_social_media"
+            target="_blank"
+            href="https://www.linkedin.com/in/higor-lara-b46b2a1b2/"
+          >
+            <img
+              src="./images/linkedin/linkedin.png"
+              alt="linkedin"
+              class="social_media_img"
+            />
+          </a>
+        </div>
+      </header>
+      <div id="container">
+        <div id="profile">
+          <div id="details_container">
+            <div class="details">
+              <p class="white big">2+</p>
+              <p class="gray normal">Anos de</p>
+              <p class="gray normal">programação</p>
+              <br />
+              <p class="white big">6+</p>
+              <p class="gray normal">Projetos</p>
+              <p class="gray normal">completos</p>
+              <br /><br />
+              <p class="white normal_title">SERVIÇOS</p>
+              <br />
+              <p class="gray normal">Website front end</p>
+              <p class="gray normal">Mobile app front end</p>
+              <p class="gray normal">UI design</p>
+            </div>
+          </div>
+          <div class="photo_container">
+            <div class="photo_background">
+              <div class="circle">
+                <img src="./images/man.png" alt="Eu" class="photo" />
+              </div>
+            </div>
+          </div>
+          <div id="description_container">
+            <div class="description">
+              <p class="white extra_large">Higor</p>
+              <p class="white extra_large">Desenvolvedor</p>
+              <p class="white extra_large">Front end</p>
+              <br />
+              <p class="gray normal">
+                Higor Lara, desenvolvedor júnior de front end e entusiasta de
+                UI. Especializado em aplicativos e web sites javascript.
+                Atualmente focado em projetos autônomos e freelances.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="skills_container">
+          <div class="general_title">
+            <p class="white large">Minhas</p>
+            <p class="white large">Skills</p>
+          </div>
+          <div class="technology_container">
+            <div class="boxs">
+              <div class="technology">
+                <div class="technology_border_img">
+                  <div class="technology_container_img">
+                    <img
+                      src="./images/react.png"
+                      alt="reactjs"
+                      class="technology_img"
+                    />
+                  </div>
+                </div>
+                <div class="text_technology">
+                  <p class="white normal_title">React</p>
+                  <p class="gray normal">Websites</p>
+                </div>
+              </div>
+              <div class="technology">
+                <div class="technology_border_img">
+                  <div class="technology_container_img">
+                    <img
+                      src="./images/react.png"
+                      alt="react native"
+                      class="technology_img"
+                    />
+                  </div>
+                </div>
+                <div class="text_technology">
+                  <p class="white normal_title">React Native</p>
+                  <p class="gray normal">Mobile</p>
+                </div>
+              </div>
+              <div class="technology">
+                <div class="technology_border_img">
+                  <div class="technology_container_img">
+                    <img
+                      src="./images/javascript.png"
+                      alt="javascript"
+                      class="technology_img"
+                    />
+                  </div>
+                </div>
+                <div class="text_technology">
+                  <p class="white normal_title">Javascript</p>
+                  <p class="gray normal">Website</p>
+                </div>
+              </div>
+              <div class="technology">
+                <div class="technology_border_img">
+                  <div class="technology_container_img">
+                    <img
+                      src="./images/html/html.png"
+                      alt="html"
+                      class="technology_img"
+                    />
+                  </div>
+                </div>
+                <div class="text_technology">
+                  <p class="white normal_title">Html</p>
+                  <p class="gray normal">Website</p>
+                </div>
+              </div>
+              <div class="technology">
+                <div class="technology_border_img">
+                  <div class="technology_container_img">
+                    <img
+                      src="./images/css/css.png"
+                      alt="Css"
+                      class="technology_img"
+                    />
+                  </div>
+                </div>
+                <div class="text_technology">
+                  <p class="white normal_title">Css</p>
+                  <p class="gray normal">Website</p>
+                </div>
+              </div>
+              <div class="technology">
+                <div class="technology_border_img">
+                  <div class="technology_container_img">
+                    <img
+                      src="./images/figma/figma.png"
+                      alt="figma"
+                      class="technology_img"
+                    />
+                  </div>
+                </div>
+                <div class="text_technology">
+                  <p class="white normal_title">Figma</p>
+                  <p class="gray normal">User Interface</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills">
+            <div class="ui">
+              <div class="title">
+                <p class="white large">Websites</p>
+              </div>
+              <p class="gray normal text_center">
+                Mais familiarizado com desenvolvimento de websites, podendo
+                utilizar React, Javascript, Html e Css
+              </p>
+            </div>
+            <div class="web_mobile">
+              <div class="mobile">
+                <div class="title">
+                  <p class="white large">Mobile</p>
+                </div>
+                <p class="gray normal text_center">
+                  Estudos mais recentes com desenvolvimento mobile, Android e
+                  IOS utilizando React Native
+                </p>
+              </div>
+              <div class="website">
+                <div class="title">
+                  <p class="white large">Ui</p>
+                </div>
+                <p class="gray normal text_center">
+                  Entusiasta na área de desenvolvimento de interfaces de usuário
+                  utilizando o Figma
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="projects_container">
+          <div class="projects_title">
+            <div class="text_area">
+              <div class="text_area_content">
+                <p class="black big">Freelances, projetos</p>
+                <p class="black big">pessoas e estudos</p>
+              </div>
+            </div>
+            <div class="text_area">
+              <div>
+                <p class="black normal_title">
+                  Vamos conversar, fazer algum planejamento
+                </p>
+                <p class="black normal_title">de um projeto junto!</p>
+                <button
+                  onclick="changePosition(contact_container)"
+                  class="button_contact"
+                >
+                  <div class="background_button background_button_white">
+                    <p class="normal">Contate-me</p>
+                    <img src="./images/next.png" alt="Arrow" class="arrow" />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="projects">
+            <div class="two_projects">
+              <div class="first_project">
+                <img
+                  src="./images/virtualstats.png"
+                  alt="Virtual Stats"
+                  class="project_img"
+                />
+              </div>
+              <div class="second_project">
+                <img
+                  src="./images/sixdice.png"
+                  alt="Six Dice"
+                  class="project_img"
+                />
+              </div>
+            </div>
+            <div class="two_projects">
+              <div class="first_project">
+                <img
+                  src="./images/buscapharma.png"
+                  alt="Busca Pharma"
+                  class="project_img"
+                />
+              </div>
+              <div class="second_project">
+                <img src="./images/happy.png" alt="Happy" class="project_img" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact_container">
+          <div class="left_contact">
+            <p class="white plus_large">Vamos se conectar</p>
+            <p class="white normal">
+              Estou disposto a propostas de trabalho freelance front end, mas
+              arrisco como entusiasta, criar interfaces de usuário.
+            </p>
+            <div>
+              <p class="white normal">Telefone</p>
+              <p class="white large">(19) 98410 2848</p>
+            </div>
+            <div class="social_contact">
+              <a
+                class="molde_social_contact"
+                href="https://www.instagram.com/higor_lara/"
+                target="_blank"
+              >
+                <img
+                  src="./images/insta/instagram_light.png"
+                  alt="Instagram"
+                  class="img_social_contact"
+                />
+              </a>
+              <a
+                class="molde_social_contact"
+                href="https://www.linkedin.com/in/higor-lara-b46b2a1b2/"
+                target="_blank"
+              >
+                <img
+                  src="./images/linkedin/linkedin_light.png"
+                  alt="Linkedin"
+                  class="img_social_contact"
+                />
+              </a>
+              <a
+                class="molde_social_contact"
+                href="https://www.facebook.com/higor.lara.71/"
+                target="_blank"
+              >
+                <img
+                  src="./images/facebook/facebook_light.png"
+                  alt="Facebook"
+                  class="img_social_contact"
+                />
+              </a>
+            </div>
+            <div id="copyright_container">
+              <div class="copyright">
+                <p class="copyright_letter">©</p>
+                <p class="copyright_text">
+                  Copyright. Todos os direitos reservados.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="right_contact">
+            <p class="white normal">
+              Ficou com alguma dúvida ? Qualquer assunto interessado, preencha
+              os campos abaixo, entrarei em contato em breve.
+            </p>
+            <form
+              action="https://api.staticforms.xyz/submit"
+              method="POST"
+              autocomplete="off"
+            >
+              <div class="two_inputs">
+                <div class="inputs full_width">
+                  <label for="Name">Nome</label>
+                  <input
+                    type="text"
+                    id="Name"
+                    name="name"
+                    placeholder="Digite aqui"
+                    required
+                  />
+                </div>
+                <div class="inputs full_width">
+                  <label for="Email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="email@exemplo.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="inputs full_width">
+                <label for="Telefone">Telefone</label>
+                <input
+                  type="tel"
+                  id="Telefone"
+                  name="phone"
+                  placeholder="(00)00000 0000"
+                  required
+                />
+              </div>
+              <div class="inputs full_width">
+                <label for="Assunto">Assunto</label>
+                <input
+                  type="text"
+                  id="Assunto"
+                  name="subject"
+                  placeholder="Digite aqui"
+                  required
+                />
+              </div>
+              <div class="inputs full_width">
+                <label for="Mensagem">Mensagem</label>
+                <textarea
+                  type="text"
+                  id="Mensagem"
+                  name="message"
+                  maxlength="800"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="hidden"
+                name="accessKey"
+                value="b5f64f7f-6995-4a93-86a5-987932adf74f"
+              />
+              <input
+                type="hidden"
+                name="redirectTo"
+                value="http://127.0.0.1:5500/thanks.html"
+              />
+              <input type="text" name="honeypot" style="display: none" />
+              <div class="send_button_container">
+                <button type="submit" class="button_contact">
+                  <div class="background_button background_button_black">
+                    <p class="white normal">Enviar</p>
+                    <img
+                      src="./images/send/send_light.png"
+                      alt="Arrow"
+                      class="arrow"
+                    />
+                  </div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
