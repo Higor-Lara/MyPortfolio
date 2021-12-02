@@ -735,7 +735,8 @@ form {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 0 0 20vh 0;
+    margin: 0 0 12vh 0;
+    padding-top: 80px;
   }
   .text_area {
     height: auto;
