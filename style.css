@@ -789,4 +789,7 @@ form {
     align-items: center;
     justify-content: center;
   }
+  .button_contact {
+    display: none;
+  }
 }
