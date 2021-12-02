@@ -18,28 +18,35 @@
         <div id="button_header_container">
           <div class="logo_container">
             <img src="./images/logo.png" alt="logo" class="logo" />
+            <button onclick="handleHeader()" class="mobile_menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </button>
           </div>
-          <button class="button_header" onclick="changePosition(background)">
-            Quem sou
-          </button>
-          <button
-            class="button_header"
-            onclick="changePosition(skills_container)"
-          >
-            O que faço
-          </button>
-          <button
-            class="button_header"
-            onclick="changePosition(projects_container)"
-          >
-            Portfólio
-          </button>
-          <button
-            class="button_header"
-            onclick="changePosition(contact_container)"
-          >
-            Contato
-          </button>
+          <div class="just_buttons_container">
+            <button class="button_header" onclick="changePosition(background)">
+              Quem sou
+            </button>
+            <button
+              class="button_header"
+              onclick="changePosition(skills_container)"
+            >
+              O que faço
+            </button>
+            <button
+              class="button_header"
+              onclick="changePosition(projects_container)"
+            >
+              Portfólio
+            </button>
+            <button
+              class="button_header"
+              onclick="changePosition(contact_container)"
+            >
+              Contato
+            </button>
+          </div>
         </div>
         <div id="media_container">
           <a
@@ -68,15 +75,32 @@
       </header>
       <div id="container">
         <div id="profile">
+          <div id="description_container_mobile">
+            <div class="description">
+              <p class="white extra_large">Higor</p>
+              <p class="white extra_large">Desenvolvedor</p>
+              <p class="white extra_large">Front end</p>
+              <br />
+              <p class="gray normal">
+                Higor Lara, desenvolvedor júnior de front end e entusiasta de
+                UI. Especializado em aplicativos e web sites javascript.
+                Atualmente focado em projetos autônomos e freelances.
+              </p>
+            </div>
+          </div>
           <div id="details_container">
             <div class="details">
               <p class="white big">3+</p>
-              <p class="gray normal">Anos de</p>
-              <p class="gray normal">programação</p>
+              <div>
+                <p class="gray normal">Anos de</p>
+                <p class="gray normal">programação</p>
+              </div>
               <br />
               <p class="white big">6+</p>
-              <p class="gray normal">Projetos</p>
-              <p class="gray normal">completos</p>
+              <div>
+                <p class="gray normal">Projetos</p>
+                <p class="gray normal">completos</p>
+              </div>
               <br /><br />
               <p class="white normal_title">SERVIÇOS</p>
               <br />
@@ -88,8 +112,29 @@
           <div class="photo_container">
             <div class="photo_background">
               <div class="circle">
-                <img src="./images/man.png" alt="Eu" class="photo" />
+                <img src="./images/Higor.png" alt="Eu" class="photo" />
               </div>
+            </div>
+          </div>
+          <div id="details_container_mobile">
+            <div class="details">
+              <p class="white big">3+</p>
+              <div>
+                <p class="gray normal">Anos de</p>
+                <p class="gray normal">programação</p>
+              </div>
+              <br />
+              <p class="white big">6+</p>
+              <div>
+                <p class="gray normal">Projetos</p>
+                <p class="gray normal">completos</p>
+              </div>
+              <br /><br />
+              <p class="white normal_title">SERVIÇOS</p>
+              <br />
+              <p class="gray normal">Website front end</p>
+              <p class="gray normal">Mobile app front end</p>
+              <p class="gray normal">UI design</p>
             </div>
           </div>
           <div id="description_container">
@@ -246,7 +291,7 @@
               </div>
             </div>
             <div class="text_area">
-              <div>
+              <div class="text_area_button">
                 <p class="black normal_title">
                   Vamos conversar, fazer algum planejamento
                 </p>
@@ -434,6 +479,14 @@
                 </button>
               </div>
             </form>
+          </div>
+          <div id="copyright_container_mobile">
+            <div class="copyright">
+              <p class="copyright_letter">©</p>
+              <p class="copyright_text">
+                Copyright. Todos os direitos reservados.
+              </p>
+            </div>
           </div>
         </div>
       </div>

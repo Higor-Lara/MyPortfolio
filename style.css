@@ -8,6 +8,7 @@
 body {
   font-family: "Roboto Mono", monospace;
   background-color: #252836;
+  overflow-x: hidden;
 }
 header {
   position: fixed;
@@ -23,6 +24,28 @@ header {
   border-top: 2px solid #bf45df;
   background-color: #252836;
   z-index: 1000;
+}
+.mobile_menu {
+  border: none;
+  background: none;
+  display: none;
+  cursor: pointer;
+}
+.mobile_menu div {
+  width: 32px;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+.first_line {
+  transform: rotate(-45deg) translate(-7px, 8px);
+}
+.second_line {
+  opacity: 0;
+}
+.third_line {
+  transform: rotate(45deg) translate(-6px, -7px);
 }
 #container {
   height: 70vh;
@@ -49,6 +72,14 @@ button {
 .logo {
   width: 100px;
   height: 35px;
+}
+.just_buttons_container {
+  height: 100%;
+  display: flex;
+  margin-left: 80px;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
 }
 .button_header {
   cursor: pointer;
@@ -143,6 +174,11 @@ button {
   justify-content: center;
   align-items: center;
 }
+#details_container_mobile {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
 .details {
   display: flex;
   flex-direction: column;
@@ -182,8 +218,8 @@ button {
   background-color: #252836;
 }
 .photo {
-  height: 380px;
-  width: 225px;
+  height: 460px;
+  width: 345px;
   margin-top: 20px;
   object-fit: cover;
 }
@@ -191,6 +227,19 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#description_container_mobile {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#description_container_mobile div {
+  align-items: center;
+  margin: 0;
+  padding: 10px 20px 0 20px;
+}
+#description_container_mobile p {
+  text-align: center;
 }
 .description {
   display: flex;
@@ -215,7 +264,6 @@ button {
   padding: 1% 5% 0px 5%;
 }
 .boxs {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 }
@@ -517,6 +565,13 @@ form {
   height: 100%;
   justify-content: flex-end;
 }
+#copyright_container_mobile {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+}
 .copyright {
   display: flex;
   align-items: center;
@@ -532,4 +587,206 @@ form {
   font-size: 22px;
   font-weight: 300;
   margin-bottom: 2px;
+}
+
+@media (max-width: 999px) {
+  header {
+    height: auto;
+    max-height: 100vh;
+    align-items: baseline;
+    padding: 0;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.4));
+    border: 0;
+  }
+  #media_container {
+    height: 0%;
+    width: 0%;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    display: none;
+  }
+  .mobile_menu {
+    display: block;
+  }
+  .logo_container {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5% 0px 5%;
+    z-index: 2;
+  }
+  #button_header_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .just_buttons_container {
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 0 0 0;
+    padding: 0;
+    background-color: #252836;
+    opacity: 0;
+    transition: 0.4s ease-in;
+    transform: translateY(-110vh);
+    z-index: 1;
+  }
+  .just_buttons_container button {
+    height: 25%;
+    width: 100%;
+    border: 0;
+  }
+  .just_buttons_container button:hover {
+    border: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .just_buttons_container.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  #container {
+    padding-top: 15vh;
+  }
+  #profile {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+  #description_container {
+    display: none;
+  }
+  #description_container_mobile {
+    display: flex;
+  }
+  #details_container {
+    display: none;
+  }
+  #details_container_mobile {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .details {
+    align-items: center;
+    gap: 7px;
+    margin: 0;
+  }
+  .details div {
+    display: flex;
+    gap: 10px;
+  }
+  .boxs {
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+  }
+  .technology {
+    align-self: center;
+  }
+  .skills {
+    background: none;
+  }
+  .large {
+    font-size: 26px;
+    font-weight: 400;
+  }
+  .ui {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: 2px solid #bf45df;
+  }
+  .web_mobile {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 0;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: 2px solid #bf45df;
+  }
+  .website {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .projects_title {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0 20vh 0;
+  }
+  .text_area {
+    height: auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .text_area_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .two_projects {
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+  .first_project {
+    width: 100%;
+  }
+  .second_project {
+    width: 100%;
+    margin-top: 0;
+  }
+  #contact_container {
+    flex-direction: column;
+  }
+  .social_contact {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    gap: 30px;
+  }
+  .left_contact {
+    padding-right: 0;
+    margin-bottom: 120px;
+  }
+  #copyright_container {
+    display: none;
+  }
+  #copyright_container_mobile {
+    display: flex;
+    margin-top: 150px;
+  }
+
+  .two_inputs {
+    flex-direction: column;
+  }
+  .right_contact {
+    align-items: center;
+    justify-content: center;
+  }
 }
